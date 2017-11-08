@@ -16,6 +16,9 @@ if(!process.env.DYNO) {
   });
 }
 
+/*Connect DB*/
+let db = require('./models');
+
 
 /* Serve the build folder as static files */
 app.use(express.static(path.join(__dirname, '/dist')));
